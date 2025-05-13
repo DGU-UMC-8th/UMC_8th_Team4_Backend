@@ -23,4 +23,14 @@ public class SupplementService {
                 .map(SupplementResponse::from)
                 .collect(Collectors.toList());
     }
+
+
+    public List<SupplementResponse> getSupplementListByName(String name) {
+        List<Supplement> supplementList = supplementRepository.findAllByIngredientName(name);
+        return
+                supplementList.stream()
+                        .map(SupplementResponse::from)
+                        .collect(Collectors.toList());
+
+    }
 }
