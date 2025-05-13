@@ -1,5 +1,6 @@
 package com.example.demo.domain.ingredient.entity;
 
+import com.example.demo.domain.supplement.Supplement;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;

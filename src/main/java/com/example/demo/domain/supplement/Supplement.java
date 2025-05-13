@@ -1,8 +1,10 @@
 package com.example.demo.domain.supplement;
 
+import com.example.demo.domain.ingredient.entity.Ingredient;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Supplement {
